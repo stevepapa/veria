@@ -1,0 +1,333 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href='<%- site.URL %>/assets/fonts/lato/lato.css' rel='stylesheet' type='text/css'>
+
+<style>
+
+pre, code {
+font-size: 14px;
+color: black;
+background: #def5ff;
+padding: 6px;
+tab-size: 2;
+font-family: Consolas, Courier, Tahoma;
+}
+
+pre code {
+    padding: 0px;
+}
+
+/* Navigation Bar */
+* {
+    box-sizing: border-box;
+}
+
+.navbar-wrap {
+    background-color: black;
+    top: 0;
+    z-index: 2;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+.navbar-wrap .heading {
+    width: 100%;
+    margin-top: 13px;
+    line-height: 24px;
+    float: left;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.navbar-wrap .heading .title {
+    color: white;
+    font-weight: 400;
+}
+
+.navbar-wrap .heading .tagline {
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 80%;
+    text-decoration: italic;
+    color: whitesmoke;
+}
+
+
+/* end navbar */
+
+
+a {
+	text-decoration: inherit;
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: lato, arial;
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.3, #FCF9FC),
+	color-stop(1, #C9C9C9)
+) fixed;
+background-image: -o-linear-gradient(bottom, #FCF9FC 30%, #C9C9C9 100%);
+background-image: -moz-linear-gradient(bottom, #FCF9FC 30%, #C9C9C9 100%);
+background-image: -webkit-linear-gradient(bottom, #FCF9FC 30%, #C9C9C9 100%);
+background-image: -ms-linear-gradient(bottom, #FCF9FC 30%, #C9C9C9 100%);
+background-image: linear-gradient(to bottom, #FCF9FC 30%, #C9C9C9 100%);
+
+}
+
+button, input {
+	border-radius: 4px;
+	border: 1px solid grey;
+	width:260px;
+	padding: 4px;
+	font-size: 15px;
+	display:block;
+	clear:both;
+	margin-bottom: 6px;
+	outline: none;
+	background: inherit;
+	border: none;
+	font-size: 18px;
+	width: 100%;
+}
+
+input:focus {
+    background: white;
+    width: 100%;
+    margin-right: 10px;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+    box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+}
+
+button {
+	background: #333;
+	margin-top:15px;
+	cursor: pointer;
+
+}
+
+button:hover {
+	opacity: 0.9;
+	border: 1px solid black;
+}
+
+.container {
+	display: table;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+
+.w1200 {
+    width: 100%;
+    padding: 4px;
+    max-width: 1200px;
+}
+
+.topbar {
+	margin-top: 40px;
+}
+
+.post {
+	width: 100%;
+	background: white;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	padding: 0px 20px 20px 20px;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+.post .post-left {
+	padding-top: 16px;
+	display: table-cell;
+	width: 100%;
+}
+
+.post .post-right {
+	padding-top: 16px;
+	display: table-cell;
+	width: 120px;
+	
+}
+
+.btn {
+	display:inline-block;
+	background: #333;
+	width: 100px;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 4px;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+
+.savepostbtn {
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    margin-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    width: 220px;
+    font-size: 16px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+.btn-del {
+	margin-top: 6px;
+	background: #777;
+}
+.navbar-container {
+	width: 100%;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	display: block;
+}
+
+.mainbody {
+	margin-top: 70px;
+}
+
+.navlist {
+margin: 0;
+padding: 0;
+list-style-type: none;
+color: white;
+float: right;
+font-size: 14px;
+}
+.navlist li {
+	margin-left: 8px;
+	display: inline-block;
+	border:left;
+	background: #555;
+	border-radius: 4px;
+	cursor: pointer;
+	
+}
+
+.navlist li:hover {
+	background: #777;
+}
+
+.navlist li a {
+	padding: 8px;
+	color: inherit;
+	text-decoration: none;
+}
+
+.navlist .newpost {
+	background: #9d0000;
+}
+
+.navlist .newpost:hover {
+	background: #d80000;
+}
+
+/* edit post */
+
+.container-edit-left, .container-edit-right {
+    min-height: 200px;
+    background: white;
+    max-width: 50%;
+    width: 50%;
+    display: table-cell;
+    overflow: auto;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+    box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+}
+
+.container-edit-left {
+    background: #f7f7f7;
+}
+
+.container-edit-right {
+    padding: 15px;
+    vertical-align: top;
+}
+
+.container-edit {
+    border-spacing: 6px;
+    width:  1200px;
+}
+
+#preview-title {
+    display: block;
+    -webkit-margin-before: 0.27em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 300;
+    font-size: 2em;   
+}
+
+#text-input {
+font-size: 15px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    overflow:hidden;
+    resize: none;
+}
+
+#text-input:focus {
+    outline:0;
+    outline:none;
+}
+
+.topcol-left {
+    width: 100%;
+}
+
+.topcol-right {
+    display: table-cell;
+}
+
+</style>
+
+
+</head><body>
+
+
+<div class="navbar-wrap">
+            <div class="navbar-container">
+                <div class="heading">
+<% if (navbar === true) { %>
+<ul class=navlist><li class=newpost><a href=<%- site.URL %>/dashboard/post>New Post</a></li><li><a href=<%- site.URL %>/dashboard/logout>Logout</a></li></ul>
+<% } %>
+                    <a href="<%- site.URL %>">
+                    <span class="title">VERIA CMS</span>
+                    </a>
+                    <span class="tagline">Dashboard</span>
+					
+                </div>
+            </div>
+</div>
+	   
+<%- partial(page) %>
+
+</body></html>

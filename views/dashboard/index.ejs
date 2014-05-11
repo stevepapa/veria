@@ -1,0 +1,25 @@
+<div class="mainbody">
+<div class="container topbar">
+    <% posts.forEach(function(post){ %>
+
+
+<div class=post>
+<div class=post-left>
+<h3><%- post.title %></h3>
+<%- post.created_at %>
+</div>
+
+<div class=post-right>
+<a href="<%- site.URL %>/dashboard/post/<%- post.id %>" class="btn btn-edit">Edit Post</a>
+<a href="<%- site.URL %>/dashboard/post/<%- post.id %>/delete" class="btn btn-del">Delete</a>
+</div>
+
+</div>
+<% }) %>
+
+</div>
+
+</div>
+
+
+

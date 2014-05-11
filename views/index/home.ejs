@@ -1,0 +1,36 @@
+<% if ( posts.length >= 1 ) { %>
+<% posts.forEach(function(post){ %>
+
+<div class="article">
+
+                <div class="title">
+                    <h2>
+                        <a href="<%- site.URL %>/<%- post.uri %>">
+                            <%- post.title %>
+                        </a>
+                    </h2>
+                </div>
+                <div class="subtitle">
+                    <%- post.created_at %>
+                </div>
+                <div class="content nostyle">
+
+                    <%- post.body %>
+
+                </div>
+
+                <div class="footer">
+                    <a href="<%- site.URL %>/<%- post.uri %>" class="more">
+                        more
+                    </a>
+                </div>
+
+</div>
+
+<% }) %>
+
+<% } else { %>
+
+No posts!
+
+<% } %>

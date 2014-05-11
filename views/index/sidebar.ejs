@@ -1,0 +1,40 @@
+<div class=pagebody-sidebar>
+    <div class="sidebar">
+
+        <div class="splash">
+            <img class="logo" src="<%- index.sidebar.avatarURL %>">
+            <div class="title">
+                <%- index.sidebar.name %>
+            </div>
+            <div class="tagline">
+                <%- index.sidebar.tagline %>
+            </div>
+            <div class="links">
+                <% index.sidebar.socialLinks.forEach(function(social) {  %>
+                    <a href="<%- social.URL %>">
+                        <img class="icon" src="<%- social.icon %>">
+                    </a>
+
+                <%  })    %>
+            </div>
+
+        </div>
+
+        <div class="recent-posts">
+            <div class="title">
+                RECENT POSTS
+            </div>
+            <div>
+                <% recentPosts.forEach(function(recent) {  %>                
+                    <a href="<%- site.URL %>/<%- recent.uri %>" class="post">
+                        <%- recent.title %>
+                    </a>
+                <%  })    %>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

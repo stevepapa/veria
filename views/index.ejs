@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+    <link href='<%- site.URL %>/assets/fonts/lato/lato.css' rel='stylesheet' type='text/css'>
+    <link href="<%- site.URL %>/assets/css/index.css" rel="stylesheet" type="text/css">
+
+    <title><%- title %></title>
+</head>
+
+<body>
+    <%- partial('index/navbar') %>
+
+    <div class="container w930">
+        <div class="pagebody">
+            <%- partial('index/sidebar') %>
+
+            <div class="pagebody-main">
+                <%- partial(page) %>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

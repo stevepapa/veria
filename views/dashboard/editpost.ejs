@@ -1,0 +1,63 @@
+<form action="<%- site.URL %>/dashboard/post" method="post">
+<div class="mainbody topbar">
+
+<div class="container w1200">
+    <input name="post[title]" placeholder="Enter a title for your post.." id="posttitle" autocomplete="off" value="<%- post.title %>">
+</div>
+
+<div class="container container-edit" >
+<div class=container-edit-left>
+<textarea name="post[body]" id="text-input" oninput="this.editor.update()" rows="6" cols="60" placeholder="Type your post body here, a preview will appear on the right!"><%- post.body %></textarea>
+</div>
+
+<div class=container-edit-right>
+<div id="preview-title">
+<%- post.title %>
+</div>
+<div id="preview" ></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container w1200">
+    <button class=savepostbtn>Publish Post</button>
+</div>
+
+</div>
+
+            <% if (post.id) { %>
+                <input type=hidden name="post[id]" value="<%- post.id %>">
+            <% } %>
+
+</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="<%- site.URL %>/assets/js/jquery.autosize.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('textarea').autosize();
+});
+</script>   
+<script src="<%- site.URL %>/assets/js/markdown.js"></script>
+<script>
+$(document).ready(function(){
+function Editor(input, preview) {
+this.update = function () {
+preview.innerHTML = markdown.toHTML(input.value);
+};
+input.editor = this;
+this.update();
+}
+var $ = function (id) { return document.getElementById(id); };
+new Editor($("text-input"), $("preview"));
+});
+
+$(document).on('input','#posttitle',function(){
+    $('#preview-title').html($('#posttitle').val());
+});
+
+</script>

@@ -1,0 +1,261 @@
+body {
+    background: whitesmoke;
+    font-family: 'Lato';
+}
+
+a {
+    color: black;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+
+pre, code  {
+    font-size: 14px;
+    color: black;
+    background: #def5ff;
+    padding: 6px;
+    tab-size: 2;
+    line-height: 1.4em;
+    font-family: Consolas, Courier, Tahoma;
+}
+
+pre code {
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.w930 {
+    max-width: 930px;
+}
+
+.w600 {
+    max-width: 600px;
+}
+
+.pagebody {
+        width: 100%;
+        position: absolute;
+	background: white;
+	margin-top: 70px;
+        display: table;
+	min-height: 100%;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+        margin-bottom: 20px;
+}
+
+.pagebody .pagebody-main {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        padding: 15px;
+	max-width: 600px;
+}
+
+.pagebody .pagebody-sidebar {
+        display: table-cell;
+        position: relative;
+        float: right;
+        height: 100%;
+        background: #f9f9f9;
+	width: 300px;
+        overflow: hidden;
+}
+
+/* Navigation Bar */
+
+.navbar-wrap {
+    background-color: black;
+    top: 0;
+    z-index: 2;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+.navbar-wrap .heading {
+    margin-top: 13px;
+    line-height: 24px;
+    float: left;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.navbar-wrap .heading .title {
+    color: white;
+    font-weight: 400;
+}
+
+.navbar-wrap .heading .tagline {
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 80%;
+    text-decoration: italic;
+    color: whitesmoke;
+}
+
+.pagebody-main .article:first-of-type {
+    margin-top: -20px;
+}
+
+.article {
+    margin-bottom: 50px;
+}
+
+.article .title h2 {
+    display: block;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 300;
+    font-size: 2em;    
+}
+
+.article .subtitle {
+    margin-top: -16px;
+    font-size: 80%;
+}
+
+.article .footer {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.article .footer .more {
+    color: #f7f7f7;
+    background: black;
+    padding: 3px 8px 5px 8px;
+    border-radius: 3px;
+    
+}
+
+.article .content{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.article .content.nostyle > * { 
+    font-weight: inherit;
+    font-size: inherit;
+    
+}
+
+.sidebar .splash {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.sidebar .splash .logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 90px;
+}
+
+.sidebar .splash .title {
+    margin-top:14px;
+    font-weight: 600;
+}
+
+.sidebar .splash .tagline {
+    margin-top:8px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    font-size: 88%;
+}
+
+.sidebar .splash .links {
+    margin-top:12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.sidebar .splash .links .icon {
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar .recent-posts {
+    padding: 15px;
+}
+
+.sidebar .recent-posts .title {
+    margin-top: -12px;
+    border-top: 6px solid white;
+    padding-top: 14px;
+    font-weight: 600;
+    font-size: 90%;
+    margin-bottom: 14px;
+}
+
+.sidebar .recent-posts .post {
+    border-top: 2px solid white;
+    font-size: 86%;
+    font-weight: 400;
+    display:block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 963px) {
+    .splash {
+        position: relative;
+    }
+    
+    .pagebody {
+        margin-top: 15px;
+        display: block;
+    }
+    .pagebody .pagebody-sidebar {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+        height: inherit;
+        display: block;
+    }
+    
+    .pagebody-main {
+        display: block;
+    }
+    
+    .pagebody .pagebody-sidebar .sidebar > div:not(:first-child) {
+            display:none;
+    }
+    
+    .navbar-wrap {
+        display:none;
+    }
+    .container {
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 323px) {
+ .pagebody {
+        margin-top: 5px;
+    }   
+}
+
