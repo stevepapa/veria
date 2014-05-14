@@ -25,5 +25,9 @@
     "passport": "^0.2.0",
     "passport-local": "^1.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/stevepapa/veria.git"
+  }
 }
