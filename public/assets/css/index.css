@@ -42,7 +42,6 @@ pre code {
 
 .pagebody {
         width: 100%;
-        position: absolute;
 	background: white;
 	margin-top: 70px;
         display: table;
@@ -217,6 +216,17 @@ pre code {
     padding-bottom: 7px;
 }
 
+.pagefooter {
+	display:block;
+	font-size: 80%;
+	width: 100%;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.pagefooter a {
+	font-weight: bold;
+}
 @media (max-width: 963px) {
     .splash {
         position: relative;
