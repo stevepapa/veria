@@ -1,6 +1,6 @@
 body {
     background: whitesmoke;
-    font-family: 'Lato';
+    font-family: Vollkorn, Serif;
 }
 
 a {
@@ -41,15 +41,15 @@ pre code {
 }
 
 .pagebody {
-        width: 100%;
+	width: 100%;
 	background: white;
-	margin-top: 70px;
-        display: table;
+	display: table;
 	min-height: 100%;
+	border-top: 2px solid silver;
 	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
 	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
-        margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .pagebody .pagebody-main {
@@ -65,7 +65,6 @@ pre code {
         position: relative;
         float: right;
         height: 100%;
-        background: #f9f9f9;
 	width: 300px;
         overflow: hidden;
 }
@@ -73,31 +72,27 @@ pre code {
 /* Navigation Bar */
 
 .navbar-wrap {
-    background-color: black;
     top: 0;
-    z-index: 2;
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
     border: none;
-    position: fixed;
     right: 0;
     left: 0;
     display: block;
-    border-bottom: 1px solid white;
 }
 
 .navbar-wrap .heading {
-    margin-top: 13px;
+	padding-left: 2px;
+    margin-top: 8px;
     line-height: 24px;
     float: left;
     font-size: 22px;
-    font-weight: 800;
 }
 
 .navbar-wrap .heading .title {
-    color: white;
-    font-weight: 400;
+	font-family: Raleway;
+	color: black;
+    font-weight: Bold;
 }
 
 .navbar-wrap .heading .tagline {
@@ -105,7 +100,7 @@ pre code {
     font-weight: 300;
     font-size: 80%;
     text-decoration: italic;
-    color: whitesmoke;
+    color: black;
 }
 
 .pagebody-main .article:first-of-type {
@@ -113,10 +108,10 @@ pre code {
 }
 
 .article {
-    margin-bottom: 50px;
 }
 
 .article .title h2 {
+	font-family: raleway;
     display: block;
     -webkit-margin-before: 0.67em;
     -webkit-margin-after: 0.67em;
@@ -128,7 +123,7 @@ pre code {
 
 .article .subtitle {
     margin-top: -16px;
-    font-size: 80%;
+    font-size: 94%;
 }
 
 .article .footer {
@@ -137,16 +132,18 @@ pre code {
 }
 
 .article .footer .more {
+	font-weight: bold;
+	font-size: 90%;
+	font-family: raleway;
     color: #f7f7f7;
     background: black;
-    padding: 3px 8px 5px 8px;
+    padding: 5px 8px 5px 8px;
     border-radius: 3px;
     
 }
 
 .article .content{
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
 }
 
 .article .content.nostyle > * { 
@@ -156,6 +153,9 @@ pre code {
 }
 
 .sidebar .splash {
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin: 12px;
     padding: 15px;
     text-align: center;
 }
@@ -168,6 +168,7 @@ pre code {
 }
 
 .sidebar .splash .title {
+	font-family: raleway;
     margin-top:14px;
     font-weight: 600;
 }
@@ -178,7 +179,7 @@ pre code {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
-    font-size: 88%;
+    font-size: 94%;
 }
 
 .sidebar .splash .links {
@@ -199,6 +200,7 @@ pre code {
 }
 
 .sidebar .recent-posts .title {
+	font-family: raleway;
     margin-top: -12px;
     border-top: 6px solid white;
     padding-top: 14px;
@@ -209,11 +211,12 @@ pre code {
 
 .sidebar .recent-posts .post {
     border-top: 2px solid white;
-    font-size: 86%;
+    text-decoration: underline;
+	font-size: 94%;
     font-weight: 400;
     display:block;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
 .pagefooter {
@@ -229,10 +232,12 @@ pre code {
 }
 @media (max-width: 963px) {
     .splash {
+		margin: 0px !important;
         position: relative;
     }
     
     .pagebody {
+		border-top: none;
         margin-top: 15px;
         display: block;
     }
