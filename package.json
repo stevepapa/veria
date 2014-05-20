@@ -21,13 +21,13 @@
     "bookshelf": "^0.6.10",
     "moment": "^2.6.0",
     "sqlite3": "^2.2.3",
-    "markdown": "^0.5.0",
     "passport": "^0.2.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "marked": "^0.3.2"
   },
   "license": "MIT",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/stevepapa/veria.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevepapa/veria.git"
   }
 }

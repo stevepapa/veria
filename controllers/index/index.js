@@ -4,13 +4,13 @@ var settings = require('../../settings');
 var _ = require('lodash');
 var Post = require('../../models/post');
 var RecentPosts = require('../../models/recentposts');
-var markdown = require("markdown").markdown;
+var marked = require("marked");
 var moment = require('moment');
 
 function render(req,res,posts,recentPosts){
     
     for(i = 0; i < posts.length; i++){
-        posts[i]['body'] = markdown.toHTML(posts[i]['body']);
+        posts[i]['body'] = marked(posts[i]['body']);
         postBody = posts[i]['body'].split('</p>');
         posts[i]['body'] = postBody[0] + "</p>" + postBody[1] || ""  + "</p>" + postBody[2] || "" + "</p>";
         posts[i]['created_at'] = moment(posts[i]['created_at']).format("MMM DD, YYYY");

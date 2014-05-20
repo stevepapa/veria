@@ -5,12 +5,12 @@ var settings = require('../../settings');
 var _ = require('lodash');
 var Post = require('../../models/post');
 var RecentPosts = require('../../models/recentposts');
-var markdown = require("markdown").markdown;
+var marked = require('marked');
 var moment = require('moment');
 
 function postRender(req,res,posts,recentPosts){
     
-        posts['body'] = markdown.toHTML(posts['body']);
+        posts['body'] = marked(posts['body']);
         posts['created_at'] = moment(posts['created_at']).format("MMM DD, YYYY");
     
         res.render('index', {
