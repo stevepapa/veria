@@ -1,6 +1,7 @@
 body {
     background: whitesmoke;
     font-family: Vollkorn, Serif;
+    margin: 0px;
 }
 
 a {
@@ -85,8 +86,9 @@ pre code {
 }
 
 .navbar-wrap .heading {
-	padding-left: 2px;
-    margin-top: 8px;
+    padding-left: 2px;
+    margin-top: 16px;
+    margin-bottom: 14px;
     line-height: 24px;
     float: left;
     font-size: 22px;
@@ -283,7 +285,7 @@ pre code {
 
 @media (max-width: 323px) {
  .pagebody {
-        margin-top: 5px;
+        margin-top: 0px;
     }   
 }
 
