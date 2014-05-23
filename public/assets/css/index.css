@@ -11,6 +11,9 @@ a:link, a:hover {
     text-decoration: none;
 }
 
+pre {
+    white-space: pre-wrap;
+}
 
 pre, code  {
     font-size: 14px;
@@ -144,12 +147,22 @@ pre code {
 
 .article .content{
     font-size: 18px;
+    line-height: 1.48em;
 }
 
 .article .content.nostyle > * { 
     font-weight: inherit;
     font-size: inherit;
     
+}
+
+.article .content p {
+    -webkit-margin-after: 1.48em;
+}
+
+.article .content img {
+    height: auto;
+    max-width: 100%;
 }
 
 .sidebar .splash {
