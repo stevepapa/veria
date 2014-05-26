@@ -137,14 +137,14 @@ pre code {
 }
 
 .article .footer .more {
-	font-weight: bold;
-	font-size: 90%;
-	font-family: raleway;
-    color: #f7f7f7;
-    background: black;
-    padding: 5px 8px 5px 8px;
-    border-radius: 3px;
-    
+    font-weight: normal;
+    border-bottom: 2px solid #888;
+    font-size: 90%;
+    font-family: raleway;
+    color: black;
+    border-radius: 1px;
+    background: #f5f5f5;
+    padding: 3px 10px 3px 10px;
 }
 
 .article .content{
