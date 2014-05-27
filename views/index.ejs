@@ -7,7 +7,6 @@
 	<link href='<%- site.URL %>/assets/fonts/vollkorn/vollkorn.css' rel='stylesheet' type='text/css'>
 	<link href='<%- site.URL %>/assets/fonts/raleway/raleway.css' rel='stylesheet' type='text/css'>
     <link href="<%- site.URL %>/assets/css/index.css" rel="stylesheet" type="text/css">
-
     <title><%- title %></title>
 </head>
 
@@ -16,11 +15,15 @@
 
     <div class="container w930">
         <div class="pagebody">
-            <%- partial('index/sidebar') %>
-
-            <div class="pagebody-main">
+			
+			<% if ( sidebar === true ) { %>
+				<%- partial('index/sidebar') %>
+			<% } %>
+			
+            <div class="pagebody-main <%= sidebar === false ? "nomaxwidth" : "" %>">
                 <%- partial(page) %>
             </div>
+			
         </div>
         <div class=pagefooter>
 	    Powered by <a href="http://github.com/stevepapa/veria">Veria CMS</a>

@@ -15,6 +15,7 @@ function postRender(req,res,posts,recentPosts){
     
         res.render('index', {
             page: 'index/post',
+			sidebar: true,
             site: settings.site,
             index: settings.theme.index,
             posts: posts,

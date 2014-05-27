@@ -227,6 +227,13 @@ pre code {
     margin-bottom: 14px;
 }
 
+.sidebar .recent-posts .title .showall {
+	float:right;
+	text-decoration: underline;
+    padding-right: 10px;
+    font-size: 0.80em;
+}
+
 .sidebar .recent-posts .post {
     border-top: 2px solid white;
     text-decoration: underline;
@@ -243,6 +250,24 @@ pre code {
 	width: 100%;
 	text-align: center;
 	opacity: 0.8;
+}
+
+.nomaxwidth {
+    max-width: none !important;
+}
+
+.archive-item {
+	display: table;
+	margin-bottom: 10px;
+}
+
+.archive-item  .archive-date {
+	width: 120px;
+	text-decoration: underline;
+}
+
+.archive-item  .archive-date, .archive-item  .archive-title {
+	display: table-cell;
 }
 
 .pagefooter a {

@@ -17,8 +17,8 @@ function render(req,res,posts,recentPosts){
     }
     
     res.render('index', { 
-        page: 'index/home',
-		sidebar: true,
+        page: 'index/archive',
+		sidebar: false,
         site: settings.site,
         index: settings.theme.index,
         posts: posts,

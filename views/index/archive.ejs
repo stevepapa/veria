@@ -1,0 +1,34 @@
+<div class=article>
+ <div class=title><h2>Archive</h2></div>
+</div>
+
+<div class=archive-container>
+<% if ( posts.length >= 1 ) { %>
+<% posts.forEach(function(post){ %>
+
+<div class=archive-item>
+
+	<div class=archive-date>
+<a href="<%- site.URL %>/<%- post.uri %>">
+		<%- post.created_at %>
+</a>
+	</div>
+
+	<div class=archive-title>
+<a href="<%- site.URL %>/<%- post.uri %>">
+		<%- post.title %>
+</a>
+	</div>
+
+
+</div>
+
+<% }) %>
+
+<% } else { %>
+
+No Posts!
+
+<% } %>
+
+</div>
