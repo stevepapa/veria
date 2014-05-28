@@ -10,6 +10,12 @@ var settings = {
             filename : './config/veria.db'
         }
     },
+	plugins: {
+		disqus: {
+			enabled: false,
+			shortname: ''
+		}
+	},
     theme: {
         name: 'default',
         index: {

@@ -20,6 +20,8 @@ function postRender(req,res,posts,recentPosts){
             index: settings.theme.index,
             posts: posts,
             recentPosts: recentPosts,
+			disqus: { enabled: settings.plugins.disqus.enabled,
+					  shortname: settings.plugins.disqus.shortname },
             title: posts.title + " - " + settings.site.name
         });
 
