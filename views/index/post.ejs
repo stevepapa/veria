@@ -10,6 +10,21 @@
                 <div class="subtitle">
                     <%- posts.created_at %>
                 </div>
+				
+				<div class="socialbar">
+					<a href="https://twitter.com/home?status=<%- site.URL %>/<%- posts.uri %>" target="_blank" class="button twitter">
+					Twitter
+					</a>
+
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<%- site.URL %>/<%- posts.uri %>"  target="_blank" class="button facebook">
+					Facebook
+					</a>
+
+					<a href="https://plus.google.com/share?url=<%- site.URL %>/<%- posts.uri %>"  target="_blank" class="button google">
+					Google
+					</a>
+				</div>
+				
                 <div class="content">
 
                     <%- posts.body %>
