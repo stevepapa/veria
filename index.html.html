@@ -1,0 +1,283 @@
+<html>
+  <head>
+    <title>
+      Veria CMS, A responsive blogging platform powered by node.js
+    </title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />	
+	<meta property="og:title" content="Veria CMS, A responsive blogging platform powered by node.js">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://veriacms.com">
+	<meta property="og:description" content="Create your own beautiful and responsive blog in minutes using Veria CMS. It's powered by node.js and uses markdown to produce beautiful blog posts that look great on mobile devices and desktop!">	
+	<meta property="og:image" content="http://veriacms.com/veria-nodejs-blog-cms.png">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	
+    <style>
+      body {
+        border-top: 5px solid #333;
+        border-bottom: 5px solid #f7f7f7;
+        font-family: Open Sans, Arial;
+        margin: 0;
+        padding: 0;
+      }
+      
+      a {
+        color: black;
+      }
+      
+      p,span {
+        display:block;
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 1.66;
+        margin: 0.84em auto;
+        padding: 0 10px;
+      }
+      
+      .subheader, .header {
+        font-family: Open Sans, Arial;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+      }
+      
+      .header {
+        background: #5aafe7;
+        padding: 30px 10px;
+      }
+      
+      .header h1 {
+        margin: 10px 0 0 0;
+        font-size: 3.2em;
+        line-height: 1em;
+      }
+
+      .subheader {
+        height: 10px;
+        background: #f7f7f7;
+        display: block;
+      }
+      
+      h1, h2, h3 {
+        font-weight: 300;
+        font-family: Open Sans, Arial;
+      }
+	  
+      .btn-lge {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        background: #5aafe7;
+        display: inline-block;
+        padding: 6px 0;
+        border-radius: 6px;
+        border: 4px solid #f7f7f7;
+		width: 188px;
+      }
+      
+      .btn:hover {
+        opacity: 0.8;
+      }
+	  
+	  .grey {
+		background: gray;
+	  }
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+      
+      .code {
+        border-radius: 2px;
+        background: #47b575;
+        color: white;
+        word-break: break-all;
+      }
+      
+    </style>
+	
+  </head>
+  <body>
+    
+    <div class="header">
+      <h1>
+		Veria CMS
+	</h1>
+	<h3>
+      A responsive blogging platform powered by 
+      <b>
+        node.js
+      </b>
+	</h3>
+    </div>
+    <div class="subheader">
+    </div>
+	
+    <span>
+      <center>
+        <img src="veria-nodejs-blog-cms.png">
+      </center>
+    </span>
+    
+    <span>
+      <h2>
+        Get started easily!
+      </h2>
+    </span>
+    
+    <p>
+      Veria is powered by node.js and super easy to get started with. You can have a blog online in less than 5 minutes. Because it uses bookshelf.js as the ORM you can use MySQL, PostgreSQL or SQLite3 as your database. Posts are created using markdown, with live preview.
+    </p>
+    
+    <span>
+      <h2>
+        Why Veria?
+      </h2>
+    </span>
+    
+    <p>
+      There are plenty of great and mature blogging platforms out there. If you need the full toolkit of features for a heavy duty CMS you might want to look at something like wordpress or ghost.
+    </p>
+    <p>
+      Veria is still crawling and trying to learn how to walk! It is under heavy development which means you will see rapid and regular improvements focused around a product that is easy to use and maintain.
+    </p>
+        
+    <span>
+      <h2>
+        Product Roadmap
+      </h2>
+    </span>
+    
+    <p>
+      - Switchable themes
+    </p>
+    <p>
+      - Widgets (for example categories in the sidebar)
+    </p>
+    <p>
+      - Apps (plug and play things like analytics, comment systems, 
+    </p>
+    <p>
+      - New single page (probably angular) dashboard with more functionality
+    </p>
+    <p>
+      - Flexible and customizable SEO
+    </p>
+    <p>
+      - Static pages
+    </p>
+    
+    <span>
+      <h2>
+        Contribute
+      </h2>
+    </span>
+    
+    <p>
+      As Veria is under heavy development and in it's very early stages a lot of functionality is yet to come. If you would like to contribute please communicate through the GitHub or get started by forking and making changes.
+    </p>
+    
+    <span>
+      <h2>
+        Installation Instructions
+      </h2>
+    </span>
+    
+    <p>
+      Installation is easy! All you need to get started is node.js, npm and git.
+    </p>
+    
+    <p>
+      First clone the repository.
+    </p>
+    
+    <p class=code>
+      git clone https://github.com/stevepapa/veria.git
+    </p>
+    
+    <p>
+      Once this is done, initialize the app by running this inside the veria folder:
+    </p>
+    
+    <p class=code>
+      npm install
+    </p>
+    
+    <p>
+      It's recommended at this stage you edit 
+      <b>
+        settings.js
+      </b>
+      located in the root directory of the installation to customize your blog.
+    </p>
+    
+    <p>
+      After that, you are ready! Now start your app.
+    </p>
+    
+    <p class=code>
+      node index.js
+    </p>
+    
+    
+    <p>
+      You blog is now online. You can access it on port 3000 at your domain.
+    </p>
+    
+    <p>
+      For the default installation this is: 
+      <br>
+      <b>
+        http://localhost:3000
+      </b>
+    </p>
+
+    <p>
+      The administration dashboard is located at: 
+      <br>
+      <b>
+        http://localhost:3000/dashboard
+      </b>
+    </p>
+
+    
+    <span>
+      <h2>
+        Examples
+      </h2>
+    </span>
+    
+    <p>
+      <a target="_blank" href="http://stevepapa.com">
+        http://stevepapa.com
+      </a>
+    </p>
+    
+    <p>
+      <a target="_blank" href="http://demo.veriacms.com">
+        http://demo.veriacms.com
+      </a>
+    </p>
+    
+    
+    
+    <span>
+      <br>
+      <center>
+        <a href="https://github.com/stevepapa/veria" class='btn grey btn-lge'>
+          On GitHub
+        </a>
+        <a href="https://github.com/stevepapa/veria/tarball/master" class='btn btn-lge'>
+          Download tar.gz
+        </a>
+        <a href="https://github.com/stevepapa/veria/zipball/master" class='btn btn-lge'>
+          Download .zip
+        </a>
+
+		</center>
+    </span>
+    
+  </body>
+</html>
