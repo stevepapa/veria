@@ -47,7 +47,6 @@ pre code {
 .pagebody {
 	width: 100%;
 	background: white;
-	display: table;
 	min-height: 100%;
 	border-top: 2px solid silver;
 	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
