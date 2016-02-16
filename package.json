@@ -1,14 +1,13 @@
 {
   "name": "veria",
   "version": "0.2.2",
-  "author": "Steve Papas <sp@stevepapa.com>",
+  "author": "Steve Papa <sp@stevepapa.com>",
   "description": "A lightweight Node.js blogging platform.",
   "scripts": {
     "start": "node ./index"
   },
   "dependencies": {
     "express": "~4.0.0",
-    "static-favicon": "~1.0.0",
     "morgan": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
@@ -20,7 +19,7 @@
     "lodash": "^2.4.1",
     "bookshelf": "^0.6.10",
     "moment": "^2.6.0",
-    "sqlite3": "^2.2.3",
+    "sqlite3": "^3.1.1",
     "passport": "^0.2.0",
     "passport-local": "^1.0.0",
     "marked": "^0.3.2"
