@@ -5,7 +5,8 @@ Veria CMS is a fully responsive lightweight Node.js blogging platform.
 Installation is lightning fast, you can be online with a blog in under 5 minutes.
 The dashboard uses markdown with a live preview for fast and beautiful blog posts.
 
-## [Demo: default installation](http://demo.veriacms.com)
+## [Demo: Default Installation](http://demo.veriacms.com)
+## [Demo: Admin Dashboard](http://demo.veriacms.com/dashboard)
 
 
 Installation
