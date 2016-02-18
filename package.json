@@ -7,22 +7,23 @@
     "start": "node ./index"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
+    "bookshelf": "^0.6.10",
+    "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
     "ejs-locals": "^1.0.2",
+    "express": "~4.0.0",
     "express-session": "^1.0.4",
-    "when": "^3.1.0",
+    "knex": "^0.5.16",
     "lodash": "^2.4.1",
-    "bookshelf": "^0.6.10",
+    "marked": "^0.3.2",
     "moment": "^2.6.0",
-    "sqlite3": "^3.1.1",
+    "morgan": "~1.0.0",
     "passport": "^0.2.0",
     "passport-local": "^1.0.0",
-    "marked": "^0.3.2"
+    "sqlite3": "^3.1.1",
+    "when": "^3.1.0"
   },
   "license": "MIT",
   "repository": {
